@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-
-
 /*リセットCSS（sanitize.css）の読み込み
 ---------------------------------------------------------------------------*/
 @import url("https://unpkg.com/sanitize.css");
@@ -20,7 +18,8 @@
 ここのカラーコードを変更するだけで、テンプレートのテーマカラーが変わります。
 ---------------------------------------------------------------------------*/
 :root {
-    --primary-color: #add4dc;
+    --primary-color: #8fd7d7;
+    /* --primary-color: #add4dc; */
 }
 
 
@@ -28,18 +27,17 @@
 ---------------------------------------------------------------------------*/
 html,body {
 	height: 100%;
-	font-size: 13px;	/*基準となるフォントサイズ。*/
+	font-size: 13px;	/*基準フォントサイズ*/
 }
 
-	/*画面幅900px以上の追加指定*/
+	/*画面幅900px以上*/
 	@media screen and (min-width:900px) {
 
 	html, body {
-		font-size: 16px;	/*基準となるフォントサイズ。*/
+		font-size: 16px;	/*基準フォントサイズ。*/
 	}
 
-	}/*追加指定ここまで*/
-
+	}/*追加指定おわり*/
 
 body {
 	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
@@ -71,7 +69,6 @@ input {font-size: 1rem;}
 section + section {
 	margin-top: 3rem;
 }
-
 
 /*opa1のキーフレーム設定
 ---------------------------------------------------------------------------*/
