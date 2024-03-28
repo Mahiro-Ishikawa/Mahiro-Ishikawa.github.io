@@ -10,7 +10,17 @@ body {
 }
 
 /* ヘッダーとフッター */
-header, footer {
+header　{
+  background-image: url('headerImage/VaseFlower.jpg'); /* 画像のパスを指定 */
+  background-size: cover; /* 背景画像をコンテナに合わせて調整 */
+  background-position: center; /* 背景画像の位置を中央に配置 */
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しない */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
   background-color: #333;
   color: white;
   padding: 1rem;
