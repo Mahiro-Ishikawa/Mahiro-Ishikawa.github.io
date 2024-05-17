@@ -21,10 +21,10 @@
 <div id="menubar">
 <nav>
 <ul>
-<li><a href="index.html">ホーム</a></li>
-<li><a href="greeting.html">ご挨拶</a></li>
-<li><a href="menu.html">メニュー</a></li>
-<li><a href="link.html">リンク</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="greeting.html">About Me</a></li>
+<li><a href="link.html">Link</a></li>
+<li><a href="note.html">Noteの記事</a></li>
 </ul>
 </nav>
 </div>
@@ -34,18 +34,13 @@
 
 <section>
 
-<h2>Links</h2>
-
 <h1>所属大学・研究室サイト</h1>
-<p><a href="https://www.meiji.ac.jp">明治大学オフィシャルサイト</a></p><br>
-<p><a href="https://www.isc.meiji.ac.jp/~mmorise/lab/">森瀬研究室</a></p><br>
-<p><a href="https://www.isc.meiji.ac.jp/~mmorise/lab/">森瀬研究室</a></p><br>
-<p><a href="https://www.isc.meiji.ac.jp/~mmorise/lab/">森瀬研究室</a></p><br>
-
+<p><a href="https://www.meiji.ac.jp" data-thumbnail="https://www.meiji.ac.jp/6t5h7p00000upwbf-img/img_link_03.jpg">明治大学オフィシャルサイト</a></p><br>
+<p><a href="https://www.isc.meiji.ac.jp/~mmorise/lab/" data-thumbnail="https://lh6.googleusercontent.com/proxy/TOXOiA64wD36hjm2kKU4-wepZXFHOs6HxsdwqT-pazxvshEA2p_fl6EEAfEUoqNLaYnMLGzgNheXBVVRoOOBuFA3s-yF3FgjgD8">森勢研究室</a></p><br>
 
 <h1>各種紹介ページ</h1>
-<p><a href="https://meijinow.jp/study/seminar/79396">Meiji NOW【森瀬研究室紹介ページ】</a></p><br>
-<p><a href="https://note.com/mahiro001/all">Webサイト-note|マイページ</a></p><br>
+<p><a href="https://meijinow.jp/study/seminar/79396" data-thumbnail="https://meijinow.jp/wp-content/uploads/2022/12/kenkyu_257_04.jpeg">Meiji NOW【森勢研究室紹介ページ】</a></p><br>
+<p><a href="https://note.com/mahiro001/all" data-thumbnail="https://assets.st-note.com/production/uploads/images/89673228/rectangle_large_type_2_f0dac1e25e6f864ecc889bac6dcb12fd.jpeg?width=800">Webサイト-note|マイページ</a></p><br>
 
 
 </section>
@@ -56,7 +51,7 @@
 <!--/#contents-->
 
 <footer>
-    &copy; 2024 Mahiro Ishikawa<br>update in 2024/03/29
+    &copy; 2024 Mahiro Ishikawa<br>update in 2024/05/13
 </footer>
 
 <!--ページの上部へ戻るボタン-->
@@ -70,6 +65,16 @@
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        $('a[data-thumbnail]').each(function() {
+            var thumbnailUrl = $(this).data('thumbnail');
+            // 画像サイズの指定
+            var thumbnailImg = $('<img>').attr('src', thumbnailUrl).attr('alt', 'Thumbnail').css({'width': '100px', 'height': 'auto', 'margin-right': '20px'});
+            $(this).prepend(thumbnailImg);
+        });
+    });
+</script>
 
 </body>
 </html>

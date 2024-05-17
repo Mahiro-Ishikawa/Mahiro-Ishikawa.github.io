@@ -40,11 +40,11 @@ html,body {
 	}/*追加指定おわり*/
 
 body {
-	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-family: "游ゴシック体", "ヒラギノ角ゴシック", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	-webkit-text-size-adjust: none;
 	background: #fff;	/*背景色*/
 	color: #999;		/*文字色*/
-	line-height: 2.5;		/*行間*/
+	line-height: 1.8;		/*行間*/
 }
 
 /*リセット*/
@@ -56,7 +56,12 @@ nav {margin: 0;padding: 0;}
 table {border-collapse:collapse;}
 
 /*画像全般の設定*/
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+img {border: none;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
 
 /*videoタグ*/
 video {max-width: 100%;}
@@ -116,7 +121,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	padding: 3rem 0;	/*上下、左右へのヘッダー内の余白。remというのは文字単位の事。3remは3文字分。*/
+	padding: 1rem 0;	/*上下、左右へのヘッダー内の余白。remというのは文字単位の事。3remは3文字分。*/
 	text-align: center;	/*内容をセンタリング*/
 }
 
@@ -131,11 +136,11 @@ header {
 /*メニューブロック*/
 #menubar ul {
 	margin: 0;padding: 0;
-	margin-bottom: 3rem;			/*下に空けるスペース。３文字分。*/
+	margin-bottom: 2rem;			/*下に空けるスペース。３文字分。*/
 	display: flex;					/*flexボックスを使う指定*/
 	justify-content: space-around;	/*並びかたの種類の指定*/
-	border-top: 1px solid #ddd;		/*上の線の幅、線種、色*/
-	border-bottom: 1px solid #ddd;	/*下の線の幅、線種、色*/
+	border-top: 1px solid #cbcbcb;		/*上の線の幅、線種、色*/
+	border-bottom: 1px solid #bbbbbb;	/*下の線の幅、線種、色*/
 }
 
 /*メニュー１個あたりの設定*/
@@ -160,7 +165,9 @@ header {
 ---------------------------------------------------------------------------*/
 /*画像を囲むブロック*/
 .mainimg-slick {
-	margin-bottom: 80px;	/*画像の下に空けるスペース*/
+	/*画像の下に空けるスペース*/
+	margin: 0px 100px 40px 100px;
+	align-items: center;
 }
 
 /*丸いページナビボタン全体を囲むブロック*/
@@ -218,6 +225,13 @@ main h3 {
 	font-size: 1.4rem;		/*文字サイズ*/
 	text-align: center;		/*テキストをセンタリング*/
 	letter-spacing: 0.2em;	/*文字間隔を広くする指定*/
+	font-weight: normal;
+}
+main h3-list{
+	font-size: 1.4rem;		/*文字サイズ*/
+	text-align: left;		/*テキストをセンタリング*/
+	color: #111111;
+	font-weight: normal;
 }
 
 /**mainブロック内のpタグ*/
@@ -275,23 +289,33 @@ footer .pr {display: block;}
 ---------------------------------------------------------------------------*/
 /*ボックス１個あたりの設定*/
 .list-simple {
-	text-align: center;	/*中身をセンタリング*/
-	max-width: 700px;		/*ボックスの幅*/
+	max-width: max-content;		/*ボックスの幅*/
+	display: flex;
+	flex-wrap:wrap; /* 折り返し */
 	margin: 0 auto 4rem;	/*ボックスの外側にとるスペース。上、左右、下。*/
+	justify-content: start;
 }
 
 /*ボックス内のh3*/
-.list-simple h3 {
-	margin: 0;
-}
 
+.listbox {
+	width: 48%;
+	margin-right: 2%;
+}
 /*ボックス内のp*/
-.list-simple p {
-	margin: 0;
+.listbox p {
+	margin-top: 10px;
+	text-align: left;
 	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;
+	line-height: 2;
 }
 
+.listbox img{
+	margin: 0;
+	height: 100%x;
+	width: auto;
+	vertical-align: left;
+}
 
 /*アクセスのマップ。コメント解説がある行以外はそのままで使って下さい。
 ---------------------------------------------------------------------------*/
