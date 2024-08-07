@@ -12,54 +12,69 @@
     <div id="container">
     <div id="contents">
     
-        <header>
-        <h1 id="logo"><a href="index.html"><img src="Images/logo.png" alt="SAMPLE LOGO"></a></h1>
+    <header>
+        <h1 id="logo">
+            <a href="index.html"><img src="Images/logo.png" alt="SAMPLE LOGO"></a></h1>
         </header>
 
     <div id="menubar">
     <nav>
     <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="greeting.html">About Me</a></li>
+    <li><a href="greeting.html">Home</a></li>
+    <li><a href="index.html">Article</a></li>
     <li><a href="link.html">Link</a></li>
-    <li><a href="note.html">Noteの記事</a></li>
+    <!-- <li><a href="note.html">Noteの記事</a></li> -->
     </ul>
     </nav>
     </div>
     <!--/#menubar-->
 
     <main>
-
     <section>
+    <!-- <div class="mb30"><img src="Images/penguin.jpg" alt=""></div> -->
 
-    <div class="mb30"><img src="Images/penguin.jpg" alt=""></div>
+    <h3>
+        <font color = #111111>
+        <font size="6">石川 真大</font><br>
+        <font color = #888888>Mahiro Ishikawa</font><br>
+    </h3>
 
-    <h3><font color = #111111>
-        石川 真大 (Ishikawa, Mahiro) <font color = #888888>/</font> Master's student<br>
-    </font></h3>
-
-    <p class="c"><font color = #111111>
-        ＞＞所属 (Affiliation)<br>
-        明治大学 大学院先端数理科学研究科 先端メディアサイエンス専攻</font><br>
+    <p class="c">
+        <font color = #008080>所属 (Affiliation)</font><br>
+        <font color = #111111>明治大学 大学院先端数理科学研究科 先端メディアサイエンス専攻</font><br>
         <font color = #888888>
         First-year Master's student ad Morise Lab. Graduate School of Advanced Mathematical Sciences, Frontier Media Science Program.<br>
         <br>
     </font></p>
 
-    <p class="c"><font color = #111111>
-        ＞＞研究分野 (Research interests)<br>
-         音声合成/歌声 <br> <font color = #888888>Singing Voice/ Speech Synthesize</font><br>
-         機械学習 <br> <font color = #888888>Machine Learning</font><br>
+    <p class="c">
+        <font color = #008080>所属研究室 (Laboratory)</font><br>
+        <a href="https://www.isc.meiji.ac.jp/~mmorise/lab/" data-thumbnail="https://lh6.googleusercontent.com/proxy/TOXOiA64wD36hjm2kKU4-wepZXFHOs6HxsdwqT-pazxvshEA2p_fl6EEAfEUoqNLaYnMLGzgNheXBVVRoOOBuFA3s-yF3FgjgD8"><font color = #111111>明治大学
+            森勢研究室</font></a><br>
+        <font color = #888888>
+        Cognitive Speech/Sound Processing (CSP) laboratory<br>
+        <br>
+    </font></p>
+
+    <p class="c">
+        <font color = #008080>研究分野 (Research interests)</font><br>
+        <font color = #111111>音声合成/歌声</font><br>
+        <font color = #888888>Singing Voice/ Speech Synthesize</font><br>
+        <font color = #111111>機械学習</font><br>
+        <font color = #888888>Machine Learning</font><br>
          <br>
     </font></p>
 
     <p class="c">
     </p>
-
 </section>
 
-<!--スライドショー（slick）-->
-
+<!-- スライドショー（slick）-->
+<aside class="mainimg-slick">
+    <div><img src="Images/memory_231217.jpg" alt=""></div>
+    <div><img src="Images/memory_231127.JPG" alt=""></div>
+    <div><img src="Images/memory_230119.JPG" alt=""></div>
+    </aside>
 
 </main>
 
@@ -67,7 +82,7 @@
 <!--/#contents-->
 
 <footer>
-    &copy; 2024 Mahiro Ishikawa<br>update in 2024/05/13
+    &copy; 2024 Mahiro Ishikawa<br>update in 2024/08/07
 </footer>
 
 <!--ページの上部へ戻るボタン-->
@@ -77,7 +92,11 @@
 <!--/#container-->
 
 <!--jQueryの読み込み-->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
