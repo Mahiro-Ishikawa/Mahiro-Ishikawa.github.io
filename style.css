@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*リセットCSS（sanitize.css）の読み込み
+/*リセットCSS（santize.css）の読み込み
 ---------------------------------------------------------------------------*/
 @import url("https://unpkg.com/sanitize.css");
 
@@ -312,7 +312,7 @@ footer .pr {display: block;}
 
 .listbox img{
 	margin: 0;
-	height: 100%x;
+	height: 80%x;
 	width: auto;
 	vertical-align: left;
 }
